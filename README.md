@@ -10,7 +10,6 @@ This repository provides all code and model artifacts needed to reproduce and ex
 
 - **Training script (`train_full.py`)**: a self-contained Python script for preprocessing, model definition, training, and evaluation.  
 - **Inference script (`inference_on_folder.py`)**: loads the pretrained model to classify a folder of unseen chest X-ray images.  
-- **Trained model (`pneumonia_model_full.h5`)**: ResNet-50 weights fine-tuned on the Kaggle Chest X-Ray Pneumonia dataset.  
 - **Data folders**:
   - `chest_xray/`: original dataset split into `train/`, `val/`, and `test/` subdirectories.  
   - `chest_unseen_images/`: external samples used for demonstration of inference.
@@ -22,7 +21,6 @@ This repository provides all code and model artifacts needed to reproduce and ex
 chest-xray-pneumonia-detection/
 ├── chest_xray/               # Kaggle dataset (train/val/test)
 ├── chest_unseen_images/      # Unseen X-ray samples for inference
-├── pneumonia_model_full.h5   # Pretrained ResNet-50 model
 ├── train_full.py             # One-file training & evaluation script
 ├── inference_on_folder.py    # Script to classify unseen images
 └── README.md                 # Project documentation (this file)
@@ -33,7 +31,7 @@ chest-xray-pneumonia-detection/
 ## ⚙️ Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/chest-xray-pneumonia-detection.git
+   git clone https://github.com/Mahmud715/chest-xray-pneumonia-detection.git
    cd chest-xray-pneumonia-detection
    ```
 2. Create a Python virtual environment and install dependencies:
@@ -44,7 +42,8 @@ chest-xray-pneumonia-detection/
    pip install --upgrade pip
    pip install tensorflow opencv-python
    ```
-3. Place your dataset folders (`chest_xray/`) and unseen images (`chest_unseen_images/`) in the repo root.
+3. Download dataset from: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia 
+4. Place your dataset folders (`chest_xray/`) and unseen images (`chest_unseen_images/`) in the repo root.
 
 ---
 
@@ -69,7 +68,7 @@ python inference_on_folder.py
 ---
 
 ## 📊 Results Summary
-Refer to the project report for detailed performance tables, confusion matrices, and external-sample inference examples. Visuals and quantitative metrics demonstrate the model’s high training accuracy (98.1%) and test accuracy (67.8%), along with discussion of overfitting and generalization limitations.
+Visuals and quantitative metrics demonstrate the model’s high training accuracy (98.1%) and test accuracy (67.8%), along with discussion of overfitting and generalization limitations.
 
 ---
 
