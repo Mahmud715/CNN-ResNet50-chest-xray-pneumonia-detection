@@ -1,6 +1,6 @@
 # Chest X-Ray Pneumonia Detection Pipeline
 
-**Repository Name:** chest-xray-pneumonia-detection  
+**Repository Name:** CNN-ResNet50-chest-xray-pneumonia-detection  
 **Description:** A CPU-friendly pipeline for automated pneumonia detection on chest X-ray images, combining classical preprocessing (OpenCV) with a transfer-learned ResNet-50 model (TensorFlow/Keras).
 
 ---
@@ -18,7 +18,7 @@ This repository provides all code and model artifacts needed to reproduce and ex
 
 ## 📁 Repository Structure
 ```
-chest-xray-pneumonia-detection/
+CNN-ResNet50-chest-xray-pneumonia-detection/
 ├── chest_xray/               # Kaggle dataset (train/val/test)
 ├── chest_unseen_images/      # Unseen X-ray samples for inference
 ├── train_full.py             # One-file training & evaluation script
@@ -31,8 +31,8 @@ chest-xray-pneumonia-detection/
 ## ⚙️ Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Mahmud715/chest-xray-pneumonia-detection.git
-   cd chest-xray-pneumonia-detection
+   git clone https://github.com/Mahmud715/CNN-ResNet50-chest-xray-pneumonia-detection.git
+   cd CNN-ResNet50-chest-xray-pneumonia-detection
    ```
 2. Create a Python virtual environment and install dependencies:
    ```bash
